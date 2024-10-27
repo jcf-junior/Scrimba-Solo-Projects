@@ -1,0 +1,14 @@
+{
+  "name": "Password Generator",
+  "description": "https://v2.scrimba.com/s0a4d5v14n",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}

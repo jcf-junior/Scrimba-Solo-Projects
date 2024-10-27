@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="scorecard-container">
+                <div>
+                    <h3 class="board-title">HOME</h3>
+                    <div class="score-container">
+                        <p class="home-points-text score-font" id="home-score">0</p>
+                    </div>
+                    <div class="add-points-container ">
+                        <button class="add-points-btns-home score-font" onclick="homeAdd1points()">+1</button>
+                        <button class="add-points-btns-home score-font" onclick="homeAdd2points()">+2</button>
+                        <button class="add-points-btns-home score-font" onclick="homeAdd3points()">+3</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="board-title">GUEST</h3>
+                    <div class="score-container">
+                        <p class="home-points-text score-font" id="guest-score">0</p>
+                    </div>
+                    <div class="add-points-container ">
+                        <button class="add-points-btns-home score-font" onclick="guestAdd1points()">+1</button>
+                        <button class="add-points-btns-home score-font" onclick="guestAdd2points()">+2</button>
+                        <button class="add-points-btns-home score-font" onclick="guestAdd3points()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="newgame-container">
+                <button class="score-font" id="newgame-btn" onclick="resetScore()">New Game</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+@font-face {
+    font-family: cursedTimer;
+    src: url(media/fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+.score-font {
+    font-family: cursedTimer;
+}
+
+.board-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700px;
+    color: #EEEEEE;
+    margin-bottom: 21px;
+}
+
+
+.container {
+    width: 575px;
+    height: 385px;
+    margin: auto;
+}
+
+/* Container do scorecard */
+.scorecard-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+/*Quadrado preto que contém o score*/
+.score-container {
+    height: 120px;
+    width: 155px;
+    background-color: #080001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto com o score */
+.home-points-text{
+    display: block;
+    font-weight: 400px;
+    font-size: 90px;
+    color: #F94F6D;
+    padding-top: 15px;
+}
+
+/*Container dos botoes de adicionar pontos*/
+.add-points-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 0px;
+    /* border: 2px black solid; */
+    width: 155px;
+}
+
+/*botoes de adicionar pontos*/
+.add-points-btns-home {
+    width: 45px;
+    height: 45px;
+    border: 2px #9AABD8 solid;
+    border-radius: 5px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    font-size: 18px;
+    padding: 0px;
+}
+
+.newgame-Container {
+    text-align: center;
+}
+
+#newgame-btn {
+    border: 2px #9AABD8 solid;
+    border-radius: 5px;
+    background-color: #1B244A;
+    color: #9AABD8;
+    font-size: 18px;
+    padding-top: 5px;
+}
