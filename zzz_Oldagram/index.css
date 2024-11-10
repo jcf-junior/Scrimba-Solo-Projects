@@ -82,6 +82,14 @@ header {
     max-height: 100%;
 }
 
+.post-icon:hover {
+    opacity:0.7;
+}
+
+#post-heart:hover {
+
+}
+
 .like-count, .user-caption {
     margin-left: 3px
 }
@@ -90,3 +98,37 @@ header {
     height: 25px;
     background-color: #EDEDED;
 }
+
+.heart-icon-post {
+    background-image: url(images/icon-heart.png);
+    background-size:cover;
+    border: none;
+    background-color: transparent;
+    max-height: 100%;
+    width: 23.3px;
+}
+
+.comment-icon-post {
+    background-image: url(images/icon-comment.png);
+    background-size:cover;
+    border: none;
+    background-color: transparent;
+    max-height: 100%;
+    width: 23.3px;
+}
+
+.dm-icon-post {
+    background-image: url(images/icon-dm.png);
+    background-size:cover;
+    border: none;
+    background-color: transparent;
+    max-height: 100%;
+    width: 23.3px;
+}
+
+.heart-icon-post:hover, 
+.comment-icon-post:hover,
+.dm-icon-post:hover {
+    opacity: 50%;
+}
+

@@ -29,44 +29,66 @@ const posts = [
 ]
 
 
-// Fazer uma função que renderiza cada post;
-// Fazer FOR cada post, executar RenderPost[i++]
-// Goodluck 
-
 for (let i=0; i<posts.length; i++) {
-    renderPost(posts[i])
+
+    renderPost(posts[i], i)
+
+    // const postEl = document.getElementById(`post-${i}`)
+    // if (postEl) {
+    //     postEl.addEventListener("click", () => likePost(posts[i], i))}
+
 }
 
-function renderPost(posts) {
+for (let i=0; i<posts.length; i++) {
+    let postEl = document.getElementById(`post-${i}`);
+    let likeEl = document.getElementById(`heart-post-${i}`)
+        if (postEl) {
+            postEl.addEventListener("dblclick", () => likePost(posts[i], i))
+            likeEl.addEventListener("click", () => likePost(posts[i], i))
+        }
+        
+}
 
-    let mainEl = document.getElementById("main")
+
+function likePost(posts, index) {
+    posts.likes += 1
+
+    const likeEl = document.getElementById(`like-count-post-${index}`)
+    
+    likeEl.innerHTML = `${posts.likes} likes`
+    console.log ('likeCount increased to: ', posts.likes)
+}
+
+function renderPost(posts, index) {
+    let mainEl = document.getElementById("main");
 
     mainEl.innerHTML += `
-            <section class="post-content">
-                <div class="post-user-info-container">
-                    <img class="user-avatar" src="${posts.avatar}" alt="">
-                    
-                    <div class="post-user-info">
-                        <p class="name black">${posts.name}</p>
-                        <p class="location">${posts.location}</p>
-                    </div>
+        <section class="post-content">
+            <div class="post-user-info-container">
+                <img class="user-avatar" src="${posts.avatar}" alt="">
+                <div class="post-user-info">
+                    <p class="name black">${posts.name}</p>
+                    <p class="location">${posts.location}</p>
+                </div>
+            </div>
+
+            <div class="post-image-container">
+                <img id="post-${index}" src="${posts.post}" alt="">
+            </div>
+
+            <div class="post-body">
+                <div class="post-buttons">
+
+                    <button id="heart-post-${index}" class="heart-icon-post"></button>
+                    <button class="comment-icon-post" src="images/icon-comment.png" alt=""></button>
+                    <button class="dm-icon-post" src="images/icon-dm.png" alt=""></button>
                 </div>
 
-                <div class="post-image-container">
-                    <img src="${posts.post}" alt="">
-                </div>
-
-                <div class="post-body">
-                    <div class="post-buttons">
-                        <img class="post-icon" src="images/icon-heart.png" alt="">
-                        <img class="post-icon" src="images/icon-comment.png" alt="">
-                        <img class="post-icon" src="images/icon-dm.png" alt="">
-                    </div>
-
-                    <p class="like-count black">${posts.likes} likes</p>
-                    <p class="user-caption"><span class="black">${posts.username}</span> ${posts.comment}</p>
-                </div>
-                <div class="divider"></div>
-            </section>
-    `
+                <p id="like-count-post-${index}" class="like-count black">${posts.likes} likes</p>
+                <p class="user-caption"><span class="black">${posts.username}</span> ${posts.comment}</p>
+            </div>
+            <div class="divider"></div>
+        </section>
+    `;
+    
 }
