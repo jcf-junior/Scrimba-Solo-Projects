@@ -1,3 +1,58 @@
 body {
-    margin: 0;
-} 
+    margin: 5px auto;
+    border: 1px solid black;
+    width: 600px;
+    height: 1161px;
+
+    font-family: 'Smythe', serif;
+    color: black;
+}
+
+header {
+    height: 167px;
+    width: 600px;
+    background-image: url(files/header.png);
+
+    color: white;
+    
+    .header-container{
+        position: fixed;
+    }
+
+    h1 {
+        font-size: 2.4375rem;
+        margin: 56px 0 16px 46px;
+        line-height: 24px;
+    }
+    
+    p {
+        font-size: 1.40125rem;
+        margin: 0 0 0 46px;
+        line-height: 13.8px;
+    }
+}
+
+
+main {
+
+    img {
+        width: 70px;
+    }
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.menu-item-card {
+
+    display: flex;
+    justify-content: center;
+
+    width: 508px;
+    height: 140px;
+
+    border-bottom: 1px solid gray;
+
+}

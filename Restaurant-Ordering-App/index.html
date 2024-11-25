@@ -1,9 +1,55 @@
 <html>
     <head>
-       <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     </head>
     <body>
-	<script src="index.js"></script>
+        <div id="app-container">
+            <header>
+                <div class="header-container">
+                    <h1>Jimmy's Diner</h1>
+                    <p>The best burgers and pizzas in town.</p>
+                </div>
+            </header>
+            
+            <main>
+                <section id="menu-section">
+                    <div class="menu-item-card">
+                        <img src="pizza.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>
+                                Pizza
+                            </h2>
+                            <p class="menu-item-description">Pepperoni, mushroom, mozarella</p>
+                            <p class="menu-item-price"></p>
+                        </div>
+                        <button class="menu-item-add-btn">+</button>
+
+                        <div class="menu-item-card">
+                            <img src="pizza.png" alt="">
+                            <div class="menu-item-info">
+                                <h2>
+                                    Pizza
+                                </h2>
+                                <p class="menu-item-description">Pepperoni, mushroom, mozarella</p>
+                                <p class="menu-item-price"></p>
+                            </div>
+                            <button class="menu-item-add-btn">+</button>
+
+                        
+                    </div>
+                </section>
+                <section id="checkout">
+
+                </section>
+
+            </main>
+        </div>
+
+
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 
