@@ -9,6 +9,9 @@ body {
 }
 
 header {
+    position: relative;
+    top: 0;
+    margin: 0;
     height: 167px;
     width: 600px;
     background-image: url(files/header.png);
@@ -16,7 +19,7 @@ header {
     color: white;
     
     .header-container{
-        position: fixed;
+        position: absolute;
     }
 
     h1 {
@@ -32,18 +35,19 @@ header {
     }
 }
 
-
-main {
-
-    img {
-        width: 70px;
-    }
-
-    /* display: flex;
-    flex-direction: column; */
+.stroke {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #DEDEDE;
 }
 
-.menu-item-card {
+.hidden {
+    display: none;
+}
+
+
+.menu-item-card-container {
+    position: relative;
+
     margin: 67px auto;
     display: flex;
     align-items: start;
@@ -52,31 +56,46 @@ main {
     width: 508px;
     height: 140px;
 
-    border: 1px solid red;
     border-bottom: 1px solid gray;
 
 }
 
-.menu-item-card img {
-    border: 1px solid blue;
+.menu-item-img {
+    /* width: 70px; */
+    height: 89px;
+    
     margin: 0;
     padding: 0;
 }
 
-.menu-item-card h2 {
-    margin: 7.2px 0 0 31px;
+.menu-item-info {
+    margin-left: 31px;
 }
 
-.menu-item-card p {
-    margin: 8.8px 0 0 31px;
+.menu-item-title {
+    margin: 7.2px 0 0 0;
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
-.menu-item-card p {
-    margin: 8px 0 0 31px;
+.menu-item-description {
+    color: #8B8B8B;
+    
+    margin: 8.8px 0 0;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.menu-item-price {
+    margin: 8px 0 0;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .menu-item-add-btn {
-    position: relative;
+    position: absolute;
+    left: auto;
     right: 0px;
     top: 8px;
 
@@ -88,14 +107,10 @@ main {
 
     border-radius: 50%;
     border: 1px solid #DEDEDE;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu-item-add-btn p {
-    font-family: "Inter", sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 2rem;
     font-weight: 200;
     color: #3C3C3C;
