@@ -39,20 +39,69 @@ main {
         width: 70px;
     }
 
-    display: flex;
-    flex-direction: row;
-
-
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .menu-item-card {
-
+    margin: 67px auto;
     display: flex;
-    justify-content: center;
+    align-items: start;
+    /* justify-content: center; */
 
     width: 508px;
     height: 140px;
 
+    border: 1px solid red;
     border-bottom: 1px solid gray;
 
+}
+
+.menu-item-card img {
+    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item-card h2 {
+    margin: 7.2px 0 0 31px;
+}
+
+.menu-item-card p {
+    margin: 8.8px 0 0 31px;
+}
+
+.menu-item-card p {
+    margin: 8px 0 0 31px;
+}
+
+.menu-item-add-btn {
+    position: relative;
+    right: 0px;
+    top: 8px;
+
+    margin: 8px;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item-add-btn p {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #3C3C3C;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.5rem;
 }
