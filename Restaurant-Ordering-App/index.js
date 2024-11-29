@@ -2,6 +2,12 @@ import {menuArray} from '/data.js'
 
 const menuSection = document.getElementById('menu-section')
 
+document.addEventListener('click', function(e){
+    if (e.target.dataset.itemId){
+        console.log(e.target.dataset.itemId)
+        console.log("item clicked")
+    }
+})
 
 document.getElementById('menu-section').innerHTML = menuSection.innerHTML = `
     <p>hello, this is working</p>`
@@ -24,13 +30,15 @@ function getMenuItemsHtml(menuArray) {
                             ${name}
                         </h2>
                         <p class="menu-item-description">${ingredients.join(', ')}</p>
-                        <p class="menu-item-price">$${price}</p>
+                        <p class="menu-item-price price">$${price}</p>
                     </div>
-                    <button class="menu-item-add-btn"><p>+</p></button>
+                    <button type="button" class="menu-item-add-btn" data-item-id="${id}">+</button>
                 </div>
             </div>
             `)
     })
+
+    
 
     return renderItems(htmlToRender.join(''))
 }
