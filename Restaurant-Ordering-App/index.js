@@ -2,13 +2,6 @@ import {menuArray} from '/data.js'
 
 const menuSection = document.getElementById('menu-section')
 
-document.addEventListener('click', function(e){
-    if (e.target.dataset.itemId){
-        console.log(e.target.dataset.itemId)
-        console.log("item clicked")
-    }
-})
-
 document.getElementById('menu-section').innerHTML = menuSection.innerHTML = `
     <p>hello, this is working</p>`
 
@@ -63,7 +56,6 @@ function emojiToDataURL(emoji, fontSize = 64) {
     // Retornar URL de dados
     return canvas.toDataURL();
 }
-
 
 function renderItems(htmlToRender) {
 
