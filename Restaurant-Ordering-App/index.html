@@ -49,6 +49,8 @@
 
 
                 </section>
+
+
                 <section id="checkout-section" class="">
                     <div class="checkout-container">
                         <h2 class="center">Your order</h2>
@@ -106,19 +108,24 @@
     
 
                                 <label for="cardCvv">Enter your card's CVV</label>
-                                
+
                                 <input id="cardCvv" class="indent" 
-                                type="text" 
-                                maxlength="3" minlength="4" 
+                                type="text"  
                                 placeholder="123"
                                 required
                                 pattern="^\d{3,4}$"
                                 >
                                 
-                                <input type="submit" class="payment-modal-pay-btn buy-btn" value="Pay">
+                                <input type="submit" id="modal-pay-btn" class="payment-modal-pay-btn buy-btn" value="Pay">
                             </form>
                             
                         </div>
+                    </div>
+                </section>
+
+                <section id="order-confirmation" class="hidden">
+                    <div class="order-confirmation-container">
+                        <h3>Thanks $NAME! Your order is on its way!</h3>
                     </div>
                 </section>
 
@@ -128,6 +135,7 @@
 
 	<script src="index.js" type="module"></script>
     <script src="data.js" type="module"></script>
+    <script src="renderCheckout.js" type="module"></script>
     </body>
 </html>
 
