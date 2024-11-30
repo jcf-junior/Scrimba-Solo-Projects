@@ -1,5 +1,6 @@
 import {menuArray} from '/js/data.js'
-const itemsInCart = []
+
+export const itemsInCart = []
 
 document.addEventListener('click', function(e){
 
@@ -14,6 +15,9 @@ document.addEventListener('click', function(e){
         if (itemToAdd) {
             itemsInCart.push(itemToAdd)
             console.log(`${itemToAdd.name} was added to the cart`);
+            
+            console.log(itemsInCart.map(item => item.name));
+        
         } else {
             console.log(`The item with ID ${itemId} does not exist`);
         }
