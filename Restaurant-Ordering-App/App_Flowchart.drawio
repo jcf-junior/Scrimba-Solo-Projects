@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="1PA8uO2b0LN_SxK3HFD9">
+    <mxGraphModel dx="2058" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TBchTBvgdubEj2ai9RNC-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="TBchTBvgdubEj2ai9RNC-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-2" target="TBchTBvgdubEj2ai9RNC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-2" value="Get menu items from database (data.js)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-4" target="TBchTBvgdubEj2ai9RNC-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="270" />
+              <mxPoint x="350" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-4" value="Render items fetched previously" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-8" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-9" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-11" target="TBchTBvgdubEj2ai9RNC-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-17" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-16">
+          <mxGeometry x="-0.1908" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-11" target="TBchTBvgdubEj2ai9RNC-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="448" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-28" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-27">
+          <mxGeometry x="-0.4603" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-11" value="User adds item to cart?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="70" width="156" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-15" target="TBchTBvgdubEj2ai9RNC-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-15" value="Add items to checkoutArray" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-18" target="TBchTBvgdubEj2ai9RNC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-18" value="Sum the prices of items in checkoutArray" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-20" target="TBchTBvgdubEj2ai9RNC-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-20" value="Render checkout section" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-22" target="TBchTBvgdubEj2ai9RNC-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-29" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-25">
+          <mxGeometry x="-0.3233" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-22" target="TBchTBvgdubEj2ai9RNC-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-22" value="User removes item from the cart?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="520" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-24" target="TBchTBvgdubEj2ai9RNC-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-24" value="Remove item from array" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-30" target="TBchTBvgdubEj2ai9RNC-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-35" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-34">
+          <mxGeometry x="-0.5753" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-30" target="TBchTBvgdubEj2ai9RNC-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-37" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-36">
+          <mxGeometry x="-0.4017" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-30" value="User clicks on &#39;Complete Order&#39;?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="670" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-32" target="TBchTBvgdubEj2ai9RNC-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-32" value="Show payment modal" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="419" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-38" target="TBchTBvgdubEj2ai9RNC-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-41" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-40">
+          <mxGeometry x="-0.7049" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TBchTBvgdubEj2ai9RNC-38" target="TBchTBvgdubEj2ai9RNC-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-44" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TBchTBvgdubEj2ai9RNC-43">
+          <mxGeometry x="-0.2812" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-38" value="User completes order?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="404" y="960" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TBchTBvgdubEj2ai9RNC-42" value="Show thank you message." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="419" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
