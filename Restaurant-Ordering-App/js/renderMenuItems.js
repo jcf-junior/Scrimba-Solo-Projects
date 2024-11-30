@@ -25,8 +25,6 @@ export function getMenuItemsHtml(menuArray) {
             `)
     })
 
-    
-
     return renderItems(htmlToRender.join(''))
 }
 
