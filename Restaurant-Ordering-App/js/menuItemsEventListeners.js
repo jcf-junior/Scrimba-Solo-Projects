@@ -1,10 +1,11 @@
 import {menuArray} from '/js/data.js'
+import { renderCheckout } from './renderCheckout.js'
 
 export const itemsInCart = []
 
 document.addEventListener('click', function(e){
 
-    console.log(...menuArray);
+    // console.log(...menuArray);
 
     if (e.target.dataset.itemId){
         // console.log(e.target.dataset.itemId)
@@ -17,6 +18,8 @@ document.addEventListener('click', function(e){
             console.log(`${itemToAdd.name} was added to the cart`);
             
             console.log(itemsInCart.map(item => item.name));
+
+            renderCheckout()
         
         } else {
             console.log(`The item with ID ${itemId} does not exist`);
