@@ -16,4 +16,4 @@
 
 [X] Após submit do modal, mostrar mensagem de sucesso.
 
-[] Remover 'menuItemsEventListeners.js'
+[X] Remover 'menuItemsEventListeners.js'
