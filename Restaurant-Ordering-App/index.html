@@ -41,7 +41,17 @@
                                 <p class="checkout-item-price price">$12</p>
                             </div>
 
-                            
+                            <div class="checkout-item-container">
+                                <h2 class="checkout-item-title">Burger</h2>
+                                <button type="button" id="checkout-remove-btn">remove</button>
+                                <p class="checkout-item-price price">$12</p>
+                            </div>
+
+                            <div class="checkout-item-container">
+                                <h2 class="checkout-item-title">Burger</h2>
+                                <button type="button" id="checkout-remove-btn">remove</button>
+                                <p class="checkout-item-price price">$12</p>
+                            </div>
 
                         </div>
                         
@@ -58,52 +68,44 @@
                     </div> -->
                 </section>
 
-                <section id="payment-modal" class="hidden">
-                    <div class="payment-modal">
+                <section id="payment-modal-section" class="hidden">
+                    <form id="payment-modal-form" class="payment-modal">
                         <h2 class="payment-modal-title center">Enter card details</h2>
                         <div payment-modal-inner-container>
-                            <form>
-    
-                                <label for="buyerName">Enter your name</label>
+                            <label for="buyerName">Enter your name</label>
+                            <input id="buyerName" class="indent" 
+                            type="text"
+                            placeholder="Sherlock Holmes"
+                            required
+                            pattern="^[A-Za-zÀ-ÿ\u00C0-\u017F'’\- ]{1,100}$"
+                            >
 
-                                <input id="buyerName" class="indent" 
-                                type="text"
-                                placeholder="Sherlock Holmes"
-                                required
-                                pattern="^[A-Za-zÀ-ÿ\u00C0-\u017F'’\- ]{1,100}$"
-                                >
-    
-                                <label for="cardNumber">Enter your card number</label>
+                            <label for="cardNumber">Enter your card number</label>
+                            <input id="cardNumber" class="indent" 
+                            type="text" 
+                            maxlength="16"
+                            placeholder="1234 1234 1234 1234"
+                            required
+                            pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9]{2})[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" 
+                            >
 
-                                <input id="cardNumber" class="indent" 
-                                type="text" 
-                                maxlength="16"
-                                placeholder="1234 1234 1234 1234"
-                                required
-                                pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9]{2})[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" 
-                                >
-    
 
-                                <label for="cardCvv">Enter your card's CVV</label>
-
-                                <input id="cardCvv" class="indent" 
-                                type="text"  
-                                placeholder="123"
-                                required
-                                pattern="^\d{3,4}$"
-                                >
-                                
-                                <input type="submit" id="modal-pay-btn" class="payment-modal-pay-btn buy-btn" value="Pay">
-                            </form>
+                            <label for="cardCvv">Enter your card's CVV</label>
+                            <input id="cardCvv" class="indent" 
+                            type="text"  
+                            placeholder="123"
+                            required
+                            pattern="^\d{3,4}$"
+                            >
                             
+                            <input type="submit" id="modal-pay-btn" 
+                            class="payment-modal-pay-btn buy-btn" value="Pay"></input>
                         </div>
-                    </div>
+                    </form>
                 </section>
 
                 <section id="order-confirmation" class="hidden">
-                    <div class="order-confirmation-container">
-                        <h3>Thanks $NAME! Your order is on its way!</h3>
-                    </div>
+                    
                 </section>
 
             </main>
@@ -115,6 +117,6 @@
     <script src="js/renderCheckout.js" type="module"></script>
     <script src="js/menuItemsEventListeners.js" type="module"></script>
     <script src="js/renderCheckout.js" type="module"></script>
+    <script src="js/paymentModal.js" type="module"></script>
 </body>
 </html>
-

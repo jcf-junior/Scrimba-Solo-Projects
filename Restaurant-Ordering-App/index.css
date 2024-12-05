@@ -2,7 +2,7 @@ body {
     margin: 5px auto;
     border: 1px solid black;
     width: 600px;
-    height: 1200px;
+    min-height: 1800px;
 
     font-family: 'Smythe', serif;
     color: black;
@@ -35,6 +35,10 @@ header {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 .stroke {
     -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #DEDEDE;
@@ -57,6 +61,7 @@ section .price {
     font-weight: bold;
 }
 
+/* Menu Section */
 
 .menu-item-card-container {
     position: relative;
@@ -130,6 +135,14 @@ section .price {
     line-height: 1.5rem;
 }
 
+.menu-item-add-btn:hover {
+    color: #363636;
+    background-color: #DEDEDE;
+}
+
+
+/* Checkout Section */
+
 .checkout-container {
     width: 508px;
     height: 319px;
@@ -170,6 +183,10 @@ section .price {
     color: #BBBBBB;
 }
 
+.remove-btn:hover {
+    color: #bbbbbb71;
+}
+
 .checkout-item-price {
     position: absolute;
     right: 4px;
@@ -196,13 +213,11 @@ section .price {
     margin-right: 4px;
 }
 
-/* .checkout-btn-container {
-
-} */
-
 .checkout-btn {
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+
+    margin-top: 37px
 }
 
 .buy-btn {
@@ -224,6 +239,9 @@ section .price {
 .buy-btn:hover {
     background-color: #11c589;
 }
+
+
+/* Payment Modal */
 
 .payment-modal {
     position: fixed;
